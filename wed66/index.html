@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background:repeating-linear-gradient(
+          -45deg,
+          #fff 0px,
+          #fff 10px,
+          #4ee3c2 10px,
+          #4ee3c2 20px
+        );
+     
+    }
+    .main{
+        width: 350px;
+        height: 400px;
+        background-color: rgb(255, 255 ,255 ,0.4);
+        backdrop-filter: blur(10px);
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 5px 20px 50px #000;
+
+    }
+    .button {
+            width: 200px;
+            height: 40px;
+            margin: 2px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ff4171;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .button:hover {
+            background-color: #e1f00f;
+            transform: scale(0.8);
+        }
+    img{
+        border-radius: 20%;
+        height: 120px;
+        width: 120px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin: 2px auto;
+        padding: 20px;
+    }
+    h3{
+        margin: 2px auto;
+        display: flex;
+        justify-content: center;
+    }
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var button = document.getElementById("sogod");
+        
+        button.addEventListener("click", function() {
+            window.location.href = "login.php";
+        });
+    });
+    document.addEventListener("DOMContentLoaded",function(){
+        var button =document.getElementById("km");
+
+        button.addEventListener("click",function(){
+            window.location.href="regis.php";
+        });
+    })
+    </script>    
+<body>
+    <div class="main">
+        <img src="https://www.catdumb.tv/wp-content/uploads/2020/05/14-18.jpg" alt="">
+        <h3>Thammanoon Singrai</h3>
+        <h3>student-id 6412269112</h3>
+        <h3>20 year old</h3>
+        <h3>email std6412269112@sskru.ac.th</h3>
+        <br>
+        <div class = "button" id="sogod">LOING</div>
+        <div class="button"  id="km">REGIS</div>
+    </div>
+</body>
+</html>
